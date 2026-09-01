@@ -1,0 +1,13 @@
+<h1><%= @post.title %></h1>
+
+<p>
+  <% if @post.published %>
+    Published
+  <% else %>
+    Draft
+  <% end %>
+</p>
+
+<p><%= @post.body %></p>
+
+<%= link_to "Back to posts", posts_path %>

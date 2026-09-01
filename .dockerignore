@@ -1,0 +1,14 @@
+.git
+.ruby-lsp
+.env
+.env.*
+log/*
+tmp/*
+node_modules
+public/packs
+public/packs-test
+vendor/bundle
+coverage
+.DS_Store
+.vscode
+.idea

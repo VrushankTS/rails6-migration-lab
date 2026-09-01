@@ -1,0 +1,19 @@
+<h1>Posts</h1>
+
+<%= link_to "New Post", new_post_path %>
+
+<% if @posts.any? %>
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <strong><%= link_to post.title, post %></strong>
+        <% if post.published %>
+          <span>(Published)</span>
+        <% end %>
+        <p><%= truncate(post.body, length: 120) %></p>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No posts yet.</p>
+<% end %>
