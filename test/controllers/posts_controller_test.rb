@@ -28,7 +28,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
       post posts_url, params: { post: { title: "", body: "", published: true } }
     end    
 
-    assert_response :unprocessable_entity
+    assert_response :unprocessable_content
   end
 
 end
