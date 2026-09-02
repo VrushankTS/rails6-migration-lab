@@ -1,4 +1,4 @@
-FROM ruby:3.1.6
+FROM ruby:3.2.9-slim
 
 ENV BUNDLE_JOBS=4 \
     BUNDLE_RETRY=3
